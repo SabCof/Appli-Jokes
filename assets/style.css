@@ -1,0 +1,94 @@
+/* variable */
+:root{
+    --primary: #ff6565;
+    --shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+h1{
+    font-family: 'Coming Soon', cursive;
+    font-size: 50px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-shadow: var(--shadow);
+    padding: 0 20px;
+}
+
+/* BLAGUES */
+
+#blague{
+    width: 60vw;
+    height: 50vh;
+    background-color: #ffefba;
+    margin: 30px;
+    border-radius: 30px 0 0 30px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+/* Design de la scrollbar dans la div si longue blague */
+/* scrollbar /CSS-Tricks */
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var --primary;
+    outline: 1px solid var --primary;
+  }
+  #answer{
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+  }
+  
+
+  /* Design du bouton */
+  #suivante{
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color:#fff;
+    font-size: 20px;
+    text-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    transition: all 0.2s ease-in-out;
+  }
+  #suivante:hover{
+    transform: translateY(-2px) scale(1.01);
+    background-color: #FBAB7E;
+    color: black;
+  }
